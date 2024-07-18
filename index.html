@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <span id="element"></span>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="calculator">
+            <h2 class="text">Calculator</h2>
+            <div class="calculator_output">0</div>
+            <div class="operator">
+               
+            </div>
+            <div class="keys">
+                <button class="key--operator" data-action="add">+</button>
+                <button class="key--operator" data-action="sub">-</button>
+                <button class="key--operator" data-action="multi">*</button>
+                <button class="key--operator" data-action="divi">/</button>
+                <button class="key">7</button>
+                <button class="key">8</button>
+                <button class="key">9</button>
+                <button class="key">4</button>
+                <button class="key">5</button>
+                <button class="key">6</button>
+                <button class="key">3</button>
+                <button class="key">2</button>
+                <button class="key">1</button>
+                <button class="key">0</button>
+                <button class="key" data-action="deci">.</button>
+                <button class="key" data-action="Clear">C</button>
+                <button class="enter" data-action="enter">=</button>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Calculator is designed using HTML, CSS and JavaScript'],
+            typeSpeed: 50,
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
